@@ -11,9 +11,15 @@ public class Item {
     }
     
     // método público para permitir que outras classes consultem o ID do item 
-    // sem acessar o atributo diretamente
+    // sem precisar acessar o atributo diretamente
     public int getIdItem(){
         return this.idItem;
+    }
+    
+    // método público para permitir que outras classes consultem o nome do item 
+    // sem precisar acessar o atributo diretamente
+    public String getTipoItem(){
+        return this.tipoItem;
     }
     
     void imprimirDados(){
