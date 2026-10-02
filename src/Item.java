@@ -10,6 +10,10 @@ public class Item {
         this.equipado = equipado;
     }
     
+    public void setEquipado(boolean valor){
+        this.equipado = valor;
+    }
+    
     // método público para permitir que outras classes consultem o ID do item 
     // sem precisar acessar o atributo diretamente
     public int getIdItem(){
@@ -22,7 +26,7 @@ public class Item {
         return this.tipoItem;
     }
     
-    void imprimirDados(){
+    public void imprimirDados(){
         InOut.MsgDeInformacao(
                 "Dados dos Itens",
                 String.format(
